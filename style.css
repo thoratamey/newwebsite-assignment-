@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,500,700');
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	background: #F6F6F6;
+	font-family: 'Roboto', sans-serif;
+}
+
+.header{
+	width: 100%;
+	height: 60px;
+	background: #00bfff;
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+
+
+ul{
+	list-style: none;
+	width: 660px;
+	color: #fff;
+	margin: 0 auto;
+}
+
+ul li{
+	width: 180px;
+	height: 60px;
+	float: left;
+	line-height: 60px;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 18px;
+	cursor: pointer;
+  transition: all 1s ease;
+}
+
+ul li.active{
+	background: #E63946;
+}
+
+ul li:hover{
+	background: #E63946;
+}
+
+.container{
+	width: 100%;
+	margin-top: 60px;
+}
+/* Style the content div elements. */
+.content{
+	padding: 100px 250px;
+	color: #3e4152;
+}
+
+.content h1{
+	padding-bottom: 10px;
+}
+
+.content p{
+	font-size: 16px;
+	line-height: 22px;
+}
+
+.content:nth-child(even){
+	background: #fff;
+}
+
+.footer{
+	width: 100%;
+	height: 60px;
+	line-height: 60px;
+	background: #00bfff;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+}
+
+.footer p{
+	font-weight: 700;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 20px;
+	color: #fff;
+}
+
+@media screen and (max-width: 850px){
+  .content{
+    padding: 100px 150px;
+  }
+}
+
+@media screen and (max-width: 650px){
+  .content{
+    padding: 100px 50px;
+  }
+}
